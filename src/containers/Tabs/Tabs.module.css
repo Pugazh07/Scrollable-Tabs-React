@@ -1,0 +1,44 @@
+.Header{
+    display: flex;
+    justify-content: space-between;
+    background: #ecf0f1;
+}
+
+.Tabs {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    width: 480px;
+  }
+
+.AddTab{
+    background: #ccc;
+    min-width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.Chevron{
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media (max-width: 700px) {
+    .Tabs{
+        width: 280px;
+        /* height: 30px; */
+    }
+    .AddTab,.Chevron{
+        max-width: 30px;
+    }
+}
